@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google page</title>
+</head>
+<body>
+    <div class="naviga">
+
+        <ul>
+           <li><a href="default.asp">About</a></li> 
+           <li> <a href="default.asp">Store</a></li>
+           <li> <a href="default.asp">Gmail</a></li>
+           <li> <a href="default.asp">Images</a></li>
+           <li></li> 
+           <li></li>
+    
+        </ul>
+
+    {%for item in all%}
+    <p>{{all}}</p>
+     item.Name <br/>
+     itme.Email<br/>
+     item.Age<br/><hr>
+
+    {% endfor %}
+    
+
+
+
+    </div>
+    
+</body>
+</html>
